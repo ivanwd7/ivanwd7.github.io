@@ -150,7 +150,7 @@ figure {
   position: relative;
   height: 800px;
   width: 100%;
-  background-position: 50% 0px !important;
+  background-position: 50% 60% !important;
 }
 
 @media screen and (max-width: 768px) {
