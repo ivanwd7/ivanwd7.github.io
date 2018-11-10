@@ -150,13 +150,14 @@ figure {
   position: relative;
   height: 800px;
   width: 100%;
-  background-position: 53% 0px !important;
+  background-position: 55% 0px !important;
 }
 
 @media screen and (max-width: 768px) {
   .ivnc7-cover,
   .ivnc7-hero {
     height: 700px;
+    background-size: auto 80% no-repeat !important;
   }
 }
 
