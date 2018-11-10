@@ -738,7 +738,7 @@ $(document).ready(function() {
 	// Main Menu Superfish
 	var mainMenu = function() {
 
-		$('#fh5co-primary-menu').superfish({
+		$('#ivnc7-primary-menu').superfish({
 			delay: 0,
 			animation: {
 				opacity: 'show'
@@ -761,7 +761,7 @@ $(document).ready(function() {
 	// Offcanvas and cloning of the main menu
 	var offcanvas = function() {
 
-		var $clone = $('#fh5co-menu-wrap').clone();
+		var $clone = $('#ivnc7-menu-wrap').clone();
 		$clone.attr({
 			'id' : 'offcanvas-menu'
 		});
@@ -770,15 +770,15 @@ $(document).ready(function() {
 			'id' : ''
 		});
 
-		$('#fh5co-page').prepend($clone);
+		$('#ivnc7-page').prepend($clone);
 
 		// click the burger
-		$('.js-fh5co-nav-toggle').on('click', function(){
+		$('.js-ivnc7-nav-toggle').on('click', function(){
 
-			if ( $('body').hasClass('fh5co-offcanvas') ) {
-				$('body').removeClass('fh5co-offcanvas');
+			if ( $('body').hasClass('ivnc7-offcanvas') ) {
+				$('body').removeClass('ivnc7-offcanvas');
 			} else {
-				$('body').addClass('fh5co-offcanvas');
+				$('body').addClass('ivnc7-offcanvas');
 			}
 			// event.preventDefault();
 
@@ -793,8 +793,8 @@ $(document).ready(function() {
 			$('#offcanvas-menu').css('height', w.height());
 
 			if ( w.width() > 769 ) {
-				if ( $('body').hasClass('fh5co-offcanvas') ) {
-					$('body').removeClass('fh5co-offcanvas');
+				if ( $('body').hasClass('ivnc7-offcanvas') ) {
+					$('body').removeClass('ivnc7-offcanvas');
 				}
 			}
 
@@ -807,10 +807,10 @@ $(document).ready(function() {
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
 		$(document).click(function (e) {
-	    var container = $("#offcanvas-menu, .js-fh5co-nav-toggle");
+	    var container = $("#offcanvas-menu, .js-ivnc7-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('fh5co-offcanvas') ) {
-				$('body').removeClass('fh5co-offcanvas');
+	      if ( $('body').hasClass('ivnc7-offcanvas') ) {
+				$('body').removeClass('ivnc7-offcanvas');
 			}
 	    }
 		});
