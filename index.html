@@ -149,12 +149,12 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section">
 						<h2>Are You Attending?</h2>
-						<p>Please select to notify you that you're attending. Thanks.
+						<p>Be present at the Wedding to give your Blessings & Love.</p>
 					</div>
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline">
+						<form class="form-inline" action="wedding.php" method="POST" enctype="multipart/form-data" role="form">
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
 									<label for="name" class="sr-only">Your Name</label>
@@ -163,17 +163,13 @@
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-									<label class="form-check-label" for="gridRadios1">
-									  Yes, I am attending
-									</label>
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="option1" for="gridRadios1">Yes, I am attending</label>
 								</div>
 								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
-									<label class="form-check-label" for="gridRadios2">
-									  No, i cant make it
-									</label>
-								</div>
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+                                        <label class="option2" for="gridRadios1">No, I cant</label>
+                                </div>
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<button type="submit" class="btn btn-primary btn-block">Submit</button>
